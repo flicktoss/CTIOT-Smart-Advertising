@@ -45,26 +45,55 @@ CTIOT is designed to explore how Internet of Things can enhance real-time, locat
 
 ---
 
+Got it — here's the **complete Setup Instructions** written as a **single clean Markdown block**, ready to paste directly into your `README.md`:
+
+---
+
+````markdown
+## ⚙️ Setup Instructions
+
+### 🔹 Raspberry Pi BLE Advertiser (Python)
+
+1. Ensure your Raspberry Pi has Python 3 installed.  
+2. Install required packages:
+   ```bash
+   sudo apt update
+   sudo apt install bluetooth bluez python3-pip
+   pip3 install bleak
+````
+
+3. Navigate to the BLE script directory and run:
+
+   ```bash
+   python3 ble_advertiser.py
+   ```
+
+---
+
+### 🔹 Android Application (Kotlin)
+
+1. Open the project folder in **Android Studio**.
+2. Ensure you have a physical Android device with **Bluetooth LE** support.
+3. Grant location and Bluetooth permissions in `AndroidManifest.xml`.
+4. Connect your device and click **Run** to build and deploy the app.
+
+---
+
+### 🔹 Express.js Backend Server (Node.js)
+
+1. Clone the project:
+2. Install dependencies:
+3. Start the server:
+4. The backend should now be running at:
+
+---
+
+
+
 ## 📐 System Architecture
 
+```text
 +--------------------+      BLE       +-------------------+       HTTPS        +----------------------+
 |  Raspberry Pi (Ad) |  ───────────▶  |  Android App (User)|  ───────────────▶  | Express Backend Server |
 | BLE Advertiser     |                | Scans & Sends Data |                   | Generates Ad using AI |
 +--------------------+                +-------------------+                   +----------------------+
-
-
-⚙️ Setup Instructions
-1. Raspberry Pi
-Install Python 3, bluez, and bleak
-Run ble_advertiser.py
-
-2. Android App
-Open in Android Studio
-Enable location & BLE permissions
-Run on a physical Android device (Bluetooth LE enabled)
-
-3. Express.js Backend
-git clone https://github.com/your-username/ctiot-smart-ads.git
-cd backend
-npm install
-node index.js
