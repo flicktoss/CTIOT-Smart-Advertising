@@ -1,4 +1,4 @@
-# 📡 CTIOT – Context-Aware Targeted Advertising using IoT
+# 📡 Proximity-Based Personalized Ad Delivery System 
 
 A multi-platform IoT-based advertising system that delivers **personalized, hyper-local ads** through BLE (Bluetooth Low Energy) broadcast and mobile interaction. The system integrates **hardware (Raspberry Pi)**, **mobile app (Android)**, and **backend (Express.js)** to create a seamless smart advertising ecosystem.
 
@@ -6,7 +6,7 @@ A multi-platform IoT-based advertising system that delivers **personalized, hype
 
 ## 🚀 Project Overview
 
-CTIOT is designed to explore how Internet of Things can enhance real-time, location-aware advertising. By leveraging BLE, user personalization, and cloud-based ad generation, it creates a smart system where:
+The project is designed to explore how Internet of Things can enhance real-time, location-aware advertising. By leveraging BLE, user personalization, and cloud-based ad generation, it creates a smart system where:
 
 - Advertisers **broadcast BLE signals** from Raspberry Pi devices in physical locations.
 - Nearby users **receive and interact** with personalized ads via an Android app.
